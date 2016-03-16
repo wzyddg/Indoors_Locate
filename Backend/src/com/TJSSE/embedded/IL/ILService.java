@@ -1,4 +1,4 @@
-package com.TAC.DM;
+package com.TJSSE.embedded.IL;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -8,14 +8,14 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-import com.TAC.Model.DBQuerrier;
+import com.TJSSE.embedded.IL.ILDAO;
 
-public class DMService implements Runnable {
+public class ILService implements Runnable {
 	private Socket clientSocket;
 	private BufferedReader in;
 	private PrintWriter out;
 
-	public DMService(Socket serviceSocket) {
+	public ILService(Socket serviceSocket) {
 		this.clientSocket = serviceSocket;
 	}
 
@@ -28,35 +28,35 @@ public class DMService implements Runnable {
 			System.out.println("get:" + request);
 			switch (request.charAt(0)) {
 			case '1':
-				result = DBQuerrier.getDeviceList(request.substring(2));
+//				result = ILDAO.getDeviceList(request.substring(2));
 				break;
 			case '2':
-				result = DBQuerrier.getRecordList();
+//				result = ILDAO.getRecordList();
 				break;
 			case '3':
-				result = DBQuerrier.getDevice(request.substring(2));
+//				result = ILDAO.getDevice(request.substring(2));
 				break;
 			case '4':
-				result = DBQuerrier.getRecord(request.substring(2));
+//				result = ILDAO.getRecord(request.substring(2));
 				break;
 			case '5':
-				result = DBQuerrier.borrowItem(request.substring(2));
+//				result = ILDAO.borrowItem(request.substring(2));
 				break;
 			case '6':
-				result = DBQuerrier.returnItem(request.substring(2));
+//				result = ILDAO.returnItem(request.substring(2));
 				break;
 			case '7':
-				result = DBQuerrier.adminLogin(request.substring(2));
+//				result = ILDAO.adminLogin(request.substring(2));
 				break;
 			case '8':
-				result = DBQuerrier.getDeviceListAsAdmin(request.substring(2));
+//				result = ILDAO.getDeviceListAsAdmin(request.substring(2));
 				break;
 			case '9':
-				result = DBQuerrier.editLeftNumber(request.substring(2));
+//				result = ILDAO.editLeftNumber(request.substring(2));
 				break;
 
 			default:
-				result = DBQuerrier.wrongCode(request.substring(2));
+				result = ILDAO.wrongCode(request.substring(2));
 				break;
 			}
 		} catch (Exception e) {

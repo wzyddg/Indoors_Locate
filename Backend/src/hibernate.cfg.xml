@@ -4,11 +4,9 @@
 <hibernate-configuration>
  <session-factory>
   <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-  <property name="hibernate.connection.password">tacdm</property>
-  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/tacdm?useUnicode=true&amp;characterEncoding=UTF-8</property>
-  <property name="hibernate.connection.username">tacdm</property>
+  <property name="hibernate.connection.password">tongji</property>
+  <property name="hibernate.connection.url">jdbc:mysql://180.160.40.30:3306/embedded?useUnicode=true&amp;characterEncoding=UTF-8</property>
+  <property name="hibernate.connection.username">root</property>
   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-  <mapping resource="com/TAC/Model/Borrowrecord.hbm.xml"/>
-  <mapping resource="com/TAC/Model/Iteminfo.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>

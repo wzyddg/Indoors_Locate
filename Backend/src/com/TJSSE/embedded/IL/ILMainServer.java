@@ -1,11 +1,11 @@
-package com.TAC.DM;
+package com.TJSSE.embedded.IL;
 
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class DMMainServer {
-	public DMMainServer() {
+public class ILMainServer {
+	public ILMainServer() {
 		// TODO Auto-generated constructor stub
 		
 		System.out.println(System.getProperty("file.encoding")); //GBK
@@ -15,12 +15,12 @@ public class DMMainServer {
 		try {
 			// Create socket for TCP
 			ServerSocket server = new ServerSocket(2333);
-			System.out.println("TAC-DM Server Start, waitng on Port 2333...");
+			System.out.println("TAC-IL Server Start, waitng on Port 2333...");
 			
 			while (true) {
 				//Second socket for data 
 				Socket client = server.accept();
-				DMService service=new DMService(client);
+				ILService service=new ILService(client);
 				Thread serviceThread = new Thread(service);
 				serviceThread.start();
 			}
@@ -33,7 +33,7 @@ public class DMMainServer {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		DMMainServer server = new DMMainServer();
+		ILMainServer server = new ILMainServer();
 	}
 
 }
