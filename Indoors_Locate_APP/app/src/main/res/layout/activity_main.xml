@@ -12,5 +12,65 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Indoors Locate!" />
+        android:text="New Text"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/place_id_text"
+        android:hint="place_id"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:id="@+id/start_button"
+        android:layout_below="@+id/port_text"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ip_text"
+        android:hint="IP Address"
+        android:layout_below="@+id/place_id_text"
+        android:layout_alignEnd="@+id/start_button"
+        android:layout_alignStart="@+id/place_id_text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_text"
+        android:layout_below="@+id/ip_text"
+        android:hint="username"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/ip_text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_text"
+        android:layout_below="@+id/user_text"
+        android:hint="password"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignStart="@+id/user_text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/port_text"
+        android:layout_below="@+id/password_text"
+        android:hint="port"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/password_text" />
 </RelativeLayout>
