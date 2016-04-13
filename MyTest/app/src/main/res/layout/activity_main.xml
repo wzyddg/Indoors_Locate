@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.admin.mytest.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/AllAboutAvatar"
+        style="@style/AllAboutAvatar"
+        >
+        <ImageView
+            android:id="@+id/avatarBg"
+            style="@style/avatarBg" />
+        <ImageButton
+            android:id="@+id/avatar"
+            style="@style/avatar"
+            android:background="#00ffffff" />
+
+        <TextView
+            style="@style/labelLeft"
+            android:id="@+id/Labelleft" />
+        <TextView
+            style="@style/labelRight"
+            android:id="@+id/LabelRight" />
+    </FrameLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolbar">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/linerContainer">
+        <LinearLayout
+            style="@style/linerForEachItem"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelButton"
+                android:id="@+id/NameLabel"
+                android:text="昵称" />
+            <Button
+                style="@style/CotentButton"
+                android:id="@+id/name"
+                android:text="Robert" />
+            <Button
+                style="@style/arrowButton"
+                android:id="@+id/changeName"
+                android:text=">" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/linerForEachItem"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelButton"
+                android:id="@+id/GenderLabel"
+                android:text="性别"/>
+            <Button
+                style="@style/CotentButton"
+                android:id="@+id/gender"
+                android:text="男" />
+            <Button
+                style="@style/arrowButton"
+                android:id="@+id/changeGender"
+                android:text=">" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/linerForEachItem"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelButton"
+                android:id="@+id/InterestLabel"
+                android:text="兴趣" />
+            <Button
+                style="@style/CotentButton"
+                android:id="@+id/interest"
+                android:text="摄影 旅行.." />
+            <Button
+                style="@style/arrowButton"
+                android:id="@+id/changeInterest"
+                android:text=">" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linerForEachItemWithMargin"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelButton"
+                android:id="@+id/PhoneNumLabel"
+                android:text="手机号" />
+            <Button
+                style="@style/CotentButton"
+                android:id="@+id/phoneNum"
+                android:text="12345678900" />
+            <Button
+                style="@style/arrowButton"
+                android:id="@+id/changePhoneNum"
+                android:text=">" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linerForEachItem"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelButton"
+                android:id="@+id/MailLabel"
+                android:text="邮箱" />
+            <Button
+                style="@style/CotentButton"
+                android:id="@+id/mail"
+                android:text="12345678900@qq.com" />
+            <Button
+                style="@style/arrowButton"
+                android:id="@+id/changemail"
+                android:text=">" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linerForEachItemWithMargin"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelButton"
+                android:id="@+id/PrivacyLabel"
+                android:text="隐私/安全" />
+            <Button
+                style="@style/CotentButton"
+                android:id="@+id/privacy"
+                android:text="..." />
+            <Button
+                style="@style/arrowButton"
+                android:id="@+id/changeprivacy"
+                android:text=">" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--android:layout_below="@+id/toolbar" />-->
+
+</RelativeLayout>
