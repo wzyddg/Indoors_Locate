@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.mytest.Modifyphonenumber"
+    android:background="@color/colorBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarmodifyphonenumber"
+        style="@style/toolbar"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimaryDark">
+        <Button
+            style="@style/BackToMainButton"
+            android:onClick="BacktoMain"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/linearbelowToolbar"
+        android:layout_below="@+id/toolbarmodifyphonenumber">
+
+        <EditText
+            style="@style/Inputbar"
+            android:id="@+id/phoneNum"
+            android:text="12345678910"/>
+
+    </LinearLayout>
+</RelativeLayout>

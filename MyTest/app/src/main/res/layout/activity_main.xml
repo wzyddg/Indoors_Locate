@@ -3,10 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="0dp"
-    android:paddingLeft="0dp"
-    android:paddingRight="0dp"
-    android:paddingTop="0dp"
     tools:context="com.example.admin.mytest.MainActivity">
 
     <FrameLayout
@@ -46,11 +42,13 @@
             <Button
                 style="@style/CotentButton"
                 android:id="@+id/name"
-                android:text="Robert" />
+                android:text="Robert"
+                android:onClick="ToNikename"/>
             <Button
                 style="@style/arrowButton"
                 android:id="@+id/changeName"
-                android:text=">" />
+                android:text=">"
+                android:onClick="ToNikename"/>
         </LinearLayout>
         <LinearLayout
             style="@style/linerForEachItem"
@@ -62,11 +60,13 @@
             <Button
                 style="@style/CotentButton"
                 android:id="@+id/gender"
-                android:text="男" />
+                android:text="男"
+                android:onClick="ToGender"/>
             <Button
                 style="@style/arrowButton"
                 android:id="@+id/changeGender"
-                android:text=">" />
+                android:text=">"
+                android:onClick="ToGender"/>
         </LinearLayout>
         <LinearLayout
             style="@style/linerForEachItem"
@@ -78,11 +78,13 @@
             <Button
                 style="@style/CotentButton"
                 android:id="@+id/interest"
-                android:text="摄影 旅行.." />
+                android:text="摄影 旅行.."
+                android:onClick="ToInterest"/>
             <Button
                 style="@style/arrowButton"
                 android:id="@+id/changeInterest"
-                android:text=">" />
+                android:text=">"
+                android:onClick="ToInterest"/>
         </LinearLayout>
 
         <LinearLayout
@@ -95,11 +97,13 @@
             <Button
                 style="@style/CotentButton"
                 android:id="@+id/phoneNum"
-                android:text="12345678900" />
+                android:text="12345678900"
+                android:onClick="ToPhoneNum"/>
             <Button
                 style="@style/arrowButton"
                 android:id="@+id/changePhoneNum"
-                android:text=">" />
+                android:text=">"
+                android:onClick="ToPhoneNum"/>
         </LinearLayout>
 
         <LinearLayout
@@ -112,11 +116,13 @@
             <Button
                 style="@style/CotentButton"
                 android:id="@+id/mail"
-                android:text="12345678900@qq.com" />
+                android:text="12345678900@qq.com"
+                android:onClick="ToMail"/>
             <Button
                 style="@style/arrowButton"
                 android:id="@+id/changemail"
-                android:text=">" />
+                android:text=">"
+                android:onClick="ToMail"/>
         </LinearLayout>
 
         <LinearLayout
@@ -129,11 +135,13 @@
             <Button
                 style="@style/CotentButton"
                 android:id="@+id/privacy"
-                android:text="..." />
+                android:text="..."
+                android:onClick="ToPrivacy"/>
             <Button
                 style="@style/arrowButton"
                 android:id="@+id/changeprivacy"
-                android:text=">" />
+                android:text=">"
+                android:onClick="ToPrivacy"/>
         </LinearLayout>
 
     </LinearLayout>

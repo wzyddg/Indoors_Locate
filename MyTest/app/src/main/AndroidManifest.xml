@@ -6,15 +6,36 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Back"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        >
-        <activity android:name=".MainActivity">
+        android:supportsRtl="true">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ModifypasswordActivity"
+            android:theme="@style/AppTheme.NoOp" />
+        <activity
+            android:name=".Modifynikename"
+            android:theme="@style/AppTheme.NoOp" />
+        <activity
+            android:name=".Modifygender"
+            android:theme="@style/AppTheme.NoOp" />
+        <activity
+            android:name=".Modifyphonenumber"
+            android:theme="@style/AppTheme.NoOp" />
+        <activity
+            android:name=".Modifymail"
+            android:theme="@style/AppTheme.NoOp" />
+        <activity
+            android:name=".Modifyprivacy"
+            android:theme="@style/AppTheme.NoOp"/>
+        <activity android:name=".ModifyInterest"
+            android:theme="@style/AppTheme.NoOp"></activity>
     </application>
 
 </manifest>

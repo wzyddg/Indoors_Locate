@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.mytest.ModifyInterest"
+    android:background="@color/colorBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarmodifyinterest"
+        style="@style/toolbar"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimaryDark">
+        <Button
+            style="@style/BackToMainButton"
+            android:onClick="BacktoMain"/>
+    </android.support.v7.widget.Toolbar>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarmodifyinterest"
+        android:layout_alignWithParentIfMissing="false"
+        android:clickable="true"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center">
+
+        <CheckBox
+            style="@style/radioboxForGenderChecked"
+            android:text="摄影"
+            android:id="@+id/checkBox1"
+            android:layout_margin="10dp" />
+
+        <CheckBox
+            style="@style/radioboxForGender"
+            android:text="美食"
+            android:id="@+id/checkBox2"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            style="@style/radioboxForGender"
+            android:text="游泳"
+            android:id="@+id/checkBox3"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            style="@style/radioboxForGender"
+            android:text="自拍"
+            android:id="@+id/checkBox4"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            style="@style/radioboxForGender"
+            android:text="烘焙"
+            android:id="@+id/checkBox5"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            style="@style/radioboxForGenderChecked"
+            android:text="旅行"
+            android:id="@+id/checkBox6"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            style="@style/radioboxForGender"
+            android:text="足球"
+            android:id="@+id/checkBox7"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            style="@style/radioboxForGender"
+            android:text="篮球"
+            android:id="@+id/checkBox8"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            style="@style/radioboxForGender"
+            android:text="跑步"
+            android:id="@+id/checkBox9"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            style="@style/radioboxForGender"
+            android:text="健身"
+            android:id="@+id/checkBox10"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            style="@style/radioboxForGender"
+            android:text="极限"
+            android:id="@+id/checkBox11"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            style="@style/radioboxForGender"
+            android:text="交友"
+            android:id="@+id/checkBox12"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_margin="10dp"/>
+    </GridLayout>
+
+</RelativeLayout>
