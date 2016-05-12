@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Modifyprivacy"
+    android:background="@color/colorBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarmodifyprivacy"
+        style="@style/toolbar"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimaryDark">
+        <Button
+            style="@style/BackToMainButton"
+            android:onClick="BacktoMain"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/linerContainer"
+        android:layout_below="@+id/toolbarmodifyprivacy">
+        <LinearLayout
+            style="@style/linerForEachItem"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelLong"
+                android:id="@+id/PasswordLabel"
+                android:layout_weight="0.90"
+                android:text="密码" />
+            <Button
+                style="@style/switchButton"
+                android:id="@+id/changePassword"
+                android:layout_weight="0.1"
+                android:text=">"
+                android:onClick="ToPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linerForEachItem"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelLong"
+                android:id="@+id/GPSService"
+                android:text="定位服务"/>
+
+            <Switch
+                style="@style/switchButton"
+                android:id="@+id/swicthGPS" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linerForEachItemWithMargin"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelLong"
+                android:id="@+id/SearchService"
+                android:text="可通过手机号搜索到我" />
+            <Switch
+                style="@style/switchButton"
+                android:id="@+id/switchSerach" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linerForEachItem"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelLong"
+                android:id="@+id/VerifyService"
+                android:text="加好友时需要验证" />
+            <Switch
+                style="@style/switchButton"
+                android:id="@+id/swicthVerify" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
