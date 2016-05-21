@@ -193,4 +193,40 @@
         <item name="android:checked">true</item>
     </style>
 
+    <style name= "LinerForFriendlist">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:weightSum">1</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="LinerForFriendlistSearch" parent="LinerForFriendlist">
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="ImageButtonInFriendList">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">#00ffffff</item>
+        <item name="android:src">@drawable/avatar</item>
+    </style>
+
+    <style name="NameInFriendList">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:text">bulabulabula</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+
 </resources>
