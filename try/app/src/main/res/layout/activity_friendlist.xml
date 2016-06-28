@@ -1,0 +1,147 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FriendlistActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        style="@style/linearbelowToolbar"
+        android:layout_gravity="center_horizontal|top">
+        <!--<LinearLayout-->
+        <!--android:id="@+id/frameLayout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+        <!---->
+        <!--<include layout="@layout/item_list" />-->
+        <!--</LinearLayout>-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:fitsSystemWindows= "true"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            style="@style/toolbar">
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1"
+            android:paddingTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@color/colorBackground"
+            android:baselineAligned="false">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9">
+                <EditText
+                    android:id="@+id/friend_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:inputType="numberSigned"
+                    android:ems="10"
+                    android:hint="好友手机号"
+                    android:textColor="#7b7b7b"
+                    android:textColorHighlight="#a7a7a7"
+                    android:background="@drawable/search_radious"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    />
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1">
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/friend_search"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_search_black_24dp"
+                    />
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinerForFriendlist">
+
+            <ImageButton
+                android:id="@+id/shortcutAvatar"
+                style="@style/ImageButtonInFriendList" />
+
+            <TextView
+                android:id="@+id/friendName"
+                style="@style/NameInFriendList" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinerForFriendlist">
+
+            <ImageButton
+                android:id="@+id/shortcutAvatar1"
+                style="@style/ImageButtonInFriendList" />
+
+            <TextView
+                android:id="@+id/friendName1"
+                style="@style/NameInFriendList" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/LinerForFriendlist">
+
+            <ImageButton
+                android:id="@+id/shortcutAvatar2"
+                style="@style/ImageButtonInFriendList" />
+
+            <TextView
+                android:id="@+id/friendName2"
+                style="@style/NameInFriendList" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/LinerForFriendlist">
+
+            <ImageButton
+                android:id="@+id/shortcutAvatar3"
+                style="@style/ImageButtonInFriendList" />
+
+            <TextView
+                android:id="@+id/friendName3"
+                style="@style/NameInFriendList" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/LinerForFriendlist">
+
+            <ImageButton
+                android:id="@+id/shortcutAvatar4"
+                style="@style/ImageButtonInFriendList" />
+
+            <TextView
+                android:id="@+id/friendName4"
+                style="@style/NameInFriendList" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/LinerForFriendlist">
+
+            <ImageButton
+                android:id="@+id/shortcutAvatar5"
+                style="@style/ImageButtonInFriendList" />
+
+            <TextView
+                android:id="@+id/friendName5"
+                style="@style/NameInFriendList" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

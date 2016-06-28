@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainSettingActivity">
+
+
+    <FrameLayout
+        android:id="@+id/AllAboutAvatar"
+        style="@style/AllAboutAvatar">
+        <ImageView
+            android:id="@+id/avatarBg"
+            style="@style/avatarBg"
+            android:src="@drawable/citybg" />
+        <ImageButton
+            android:id="@+id/avatar"
+            style="@style/avatar"
+            android:background="#00ffffff" />
+
+        <TextView
+            style="@style/labelLeft"
+            android:id="@+id/Labelleft" />
+        <TextView
+            style="@style/labelRight"
+            android:id="@+id/LabelRight" />
+    </FrameLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolbar">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/linerContainer">
+        <LinearLayout
+            style="@style/linerForEachItem"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelButton"
+                android:id="@+id/NameLabel"
+                android:text="昵称"
+                android:gravity="left|center" />
+            <Button
+                style="@style/CotentButton"
+                android:id="@+id/name"
+                android:text="Robert"
+                android:onClick="ToNikename"
+                android:gravity="right|center"/>
+            <Button
+                style="@style/arrowButton"
+                android:id="@+id/changeName"
+                android:text=">"
+                android:onClick="ToNikenam  e"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/linerForEachItem"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelButton"
+                android:id="@+id/GenderLabel"
+                android:text="性别"/>
+            <Button
+                style="@style/CotentButton"
+                android:id="@+id/gender"
+                android:text="男" />
+            <Button
+                style="@style/arrowButton"
+                android:id="@+id/changeGender"
+                android:text=">"
+                android:onClick="ToGender"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/linerForEachItem"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelButton"
+                android:id="@+id/InterestLabel"
+                android:text="兴趣" />
+            <Button
+                style="@style/CotentButton"
+                android:id="@+id/interest"
+                android:text="摄影 旅行.."
+                android:onClick="ToInterest"/>
+            <Button
+                style="@style/arrowButton"
+                android:id="@+id/changeInterest"
+                android:text=">"
+                android:onClick="ToInterest"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linerForEachItemWithMargin"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelButton"
+                android:id="@+id/PhoneNumLabel"
+                android:text="手机号" />
+            <Button
+                style="@style/CotentButton"
+                android:id="@+id/phoneNum"
+                android:text="12345678900"
+                android:onClick="ToPhoneNum"/>
+            <Button
+                style="@style/arrowButton"
+                android:id="@+id/changePhoneNum"
+                android:text=">"
+                android:onClick="ToPhoneNum"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linerForEachItem"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelButton"
+                android:id="@+id/MailLabel"
+                android:text="邮箱" />
+            <Button
+                style="@style/CotentButton"
+                android:id="@+id/mail"
+                android:text="12345678900@qq.com"
+                android:onClick="ToMail"
+                android:singleLine="true" />
+            <Button
+                style="@style/arrowButton"
+                android:id="@+id/changemail"
+                android:text=">"
+                android:onClick="ToMail"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linerForEachItemWithMargin"
+            android:weightSum="1">
+            <Button
+                style="@style/LabelButton"
+                android:id="@+id/PrivacyLabel"
+                android:text="隐私/安全"/>
+            <Button
+                style="@style/CotentButton"
+                android:id="@+id/privacy"
+                android:text="..."
+                android:onClick="ToPrivacy"/>
+            <Button
+                style="@style/arrowButton"
+                android:id="@+id/changeprivacy"
+                android:text=">"
+                android:onClick="ToPrivacy"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--android:layout_below="@+id/toolbar" />-->
+
+</RelativeLayout>
